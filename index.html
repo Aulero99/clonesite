@@ -10,58 +10,108 @@
     <link href="app.js">
     <title></title>
 </head>
-<body class="d-flex debug">
-    <!-- NOTE this is the anchor to the header-->
-    <header class="container-fluid">
-        <nav>
-            <div>
-                logo
+<body class="debug">
+
+<!-- NOTE this is the anchor to the header-->
+
+    <header class="container-fluid px-5">
+        <nav class="row nav-bar p-3">
+            <div class="col-6">
+                <img src="assets/images/logo.svg" class="img-fluid"/>
             </div>
-            <div>
-                navigation
+            <div class="col-6 d-flex align-content-middle align-items-center" >
+                    <a href="#" class="ms-auto">Work</a>
+                    <a href="#" class="ms-auto">About</a>
+                    <a href="#" class="ms-auto">Expertise</a>
+                    <a href="#" class="ms-auto">Blog</a>
+                    <a href="#" class="ms-auto">Store</a>
+                    <a href="#" class="ms-auto">Contact</a>
+
             </div>
         </nav>
     </header>
     
-    <!-- NOTE this is the anchor to the main -->
-    <main class="container-fluid">
-        <section>
-            <div>
-                slider text
+<!-- NOTE this is the anchor to the main -->
+
+<!-- NOTE Slider code and structure -->
+
+    <main for="slider" class="container-fluid">
+        
+        <section for="slider" class="d-flex row text-white top-slider px-5 pt-4">
+            <div for="slider-text" class="col-6 d-flex justify-content-center">
+                <div class="d-flex flex-column">
+                    <h1 >
+                        Crown Maple
+                    </h1>
+                    <p>
+                        Not All Crowns Are Created Equal
+                    </p>
+                    <div for="slier-selector"></div>
+                </div>
             </div>
-            <div>
-                slider
+
+            <div for="slider-image" class="col-6">
+                <div class="">
+                    <img src="assets/images/syrup.png" />
+                </div>
             </div>
         </section>
-        <section>
-            <div>
-                text area
+
+        <section for="text-area" class="row main-text-area">
+            <div class="col-12">
+                <p>
+                    We are artists who specialize in branding and packaging design. We help brands present their stories in ways that are effective and honest, novel and established. 
+                <div class="ribbon">
+                    Learn More
+                </div>
+                </p>
+               
             </div>
         </section>
-        <section>
-            <div>
-                blog
+        
+        <section for="block-elements" class="row">
+            <div for="blog" class="col-4">
+                <h1>blog</h1>
+                <p>
+                    New Work: MerryStockings
+                </p>
             </div>
-            <div>
-                office
+            <div for="office" class="col-4">
+                <h1>office</h1>
+                <p>
+                    Our design studio and the creative minds who work here
+                </p>
             </div>
-            <div>
-                expertise
+            <div for="expertise" class="col-4">
+                <h1>expertise</h1>
+                <p>
+                    Our design process, clients, awards, and accolades
+                </p>
             </div>
         </section>
     </main>
 
-    <!-- NOTE this is the anchor to the footer -->
+<!-- NOTE this is the anchor to the footer -->
+
     <footer class="container-fluid">
-        <section>
-            <div>
-                links
+        <section class="row">
+            <div class="col-6">
+                <a href="">Jobs</a>
+                <a href="">Store</a>
+                <a href="">Twitter</a>
+                <a href="">Facebook</a>
             </div>
-            <div>
-                contact
+            <div class="col-3">
+                <p>
+                    612.315.5270
+                </p>
+                <p>
+                    hello@studiompls.com
+                </p>
             </div>
-            <div>
-                address
+            <div class="col-3">
+                <p>3258 Minnehaha Ave</p>
+                <p>Minneapolis, MN 55406</p>
             </div>
         </section>
     </footer>
