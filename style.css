@@ -1,6 +1,5 @@
 /* NOTE debug code*/
-
-
+/* 
 body.debug .container,
     body.debug .container-fluid {
         outline: 2px double blue;
@@ -16,7 +15,7 @@ body.debug .container,
         outline: 2px dotted forestgreen;
         outline-offset: -3px;
     }
-
+ */
 
 
 /* NOTE begin custom styling  */
@@ -59,9 +58,16 @@ body.debug .container,
         color: white;
     }
 
+    .text-pop {
+        font-size: 2.7rem;
+    }
+
     .ribbon {
+        font-size: 1em;
+        transition: 85ms;
         text-align: center;
-        padding-top: 0.15rem;
+        text-decoration: none;
+        padding: 0.2rem 0.4rem 0.2rem 0.4rem;
         color: white;
         font-weight: bold;
         width: 7rem;
@@ -73,13 +79,27 @@ body.debug .container,
     
     .ribbon:after {
         content: "";
+        transition: 85ms;
         position: absolute;
-        right: -1rem;
+        right: -0.88rem;
         bottom: 0;
         width: 0;
         height: 0;
-        border-left: 1rem solid;
+        border-left: 0.9rem solid;
         border-color: var(--buttonGray);
-        border-top: 1rem solid transparent;
-        border-bottom: 1rem solid transparent;
+        border-top: 0.9rem solid transparent;
+        border-bottom: 0.9rem solid transparent;
+    }
+
+    .ribbon:hover {
+        cursor: pointer;
+        background-color: orange;
+        color: white;
+    }
+
+    .ribbon:hover::after {
+        border-left: 0.9rem solid;
+        border-color: orange;
+        border-top: 0.9rem solid transparent;
+        border-bottom: 0.9rem solid transparent;
     }
