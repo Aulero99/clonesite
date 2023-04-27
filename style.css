@@ -27,10 +27,13 @@ body.debug .container,
 
 
 /* NOTE Navigation Styles */
+    header {
+        /* border-bottom: #f2f2f2 4em; */
+        border-bottom: black 4rem;
+    }
 
     .nav-bar {
         height: 14vh;
-        border-bottom: #f2f2f2 1vh;
         background-color: #fff;
         display: flex;
         align-items: center;
@@ -49,12 +52,12 @@ body.debug .container,
         height: 80%;
         display: flex;
     }
-/* 
-    @media screen and (min-width: 480px) {
-        .logo-container {
-            align-items: flex-start;
-        }
-    } */
+
+    .nav-border div:first-of-type {
+        height: 0.7rem;
+        background-color: #f2f2f2;
+
+    }
 
     .nav-links {
         height: 100%;
@@ -84,8 +87,14 @@ body.debug .container,
 
     .top-slider {
         background-image: url(assets/images/maple.jpg);
+        font-family: 'Times New Roman', Times, serif;
         border-bottom: white 3rem;
         height: 60vh;
+    }
+
+    .top-slider h1 {
+        font-size: 3rem;
+        font-weight: bolder;
     }
 
     .slider-paralax {
@@ -102,6 +111,27 @@ body.debug .container,
 
     .slider-paralax img:hover {
         margin-top: 0rem;
+        cursor: pointer;
+    }
+
+    .selector {
+        height: 1rem;
+        width: 1rem;
+        display: flex;
+        border-style: solid;
+        border-color: white;
+        border-width: 0.15rem;
+        border-radius: 100%;
+        margin-left: 1rem;
+        transition: 50ms;
+    }
+
+    #current {
+        background-color: white;
+    }
+
+    .selector:hover {
+        background-color: white;
         cursor: pointer;
     }
 
@@ -157,4 +187,11 @@ body.debug .container,
         border-color: orange;
         border-top: 0.9rem solid transparent;
         border-bottom: 0.9rem solid transparent;
+    }
+
+    /* NOTE Footer Styles */
+
+    footer {
+        background-color: black;
+        color: white;
     }

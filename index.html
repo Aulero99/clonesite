@@ -14,7 +14,7 @@
 
 <!-- NOTE this is the anchor to the header-->
 
-    <header class="container-fluid px-md-5">
+    <header class="container-fluid">
         <nav class="row nav-bar">
             <div class="col-12 col-md-4 col-lg-6 logo-container">
                 <img src="assets/images/logo.svg" class="img-fluid"/>
@@ -30,6 +30,11 @@
             </div>
         </nav>
     </header>
+    <div for="border-bottom" class="container-fluid">
+        <div  class="row nav-border">
+            <div class="col-12"></div>
+        </div>
+    </div>
     
 <!-- NOTE this is the anchor to the main -->
 
@@ -39,14 +44,19 @@
         
         <section for="slider" class="d-flex row text-white top-slider px-5 pt-4">
             <div for="slider-text" class="col-6 d-flex justify-content-center">
-                <div class="d-flex flex-column">
+                <div class="d-flex flex-column justify-content-center">
                     <h1 >
                         Crown Maple
                     </h1>
                     <p>
                         Not All Crowns Are Created Equal
                     </p>
-                    <div for="slier-selector"></div>
+                    <div for="slider-selector"  class="d-flex flex-row">
+                        <div class="selector" id="current"></div>
+                        <div class="selector"></div>
+                        <div class="selector"></div>
+                        <div class="selector"></div>
+                    </div>
                 </div>
             </div>
 
